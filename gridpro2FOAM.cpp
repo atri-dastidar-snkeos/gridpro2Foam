@@ -71,7 +71,7 @@ void WriteHeader(FILE *f,string root, string cas, string classe, string object, 
 	fprintf(f," object %s;\n}\n\n", object.c_str());
 }
 
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	FILE *f;
 	FILE *f2;
@@ -1307,4 +1307,5 @@ main(int argc, char *argv[])
 	printf("  Reading: %1.2lg\n", timeReading/1e6);
 	printf("  Merging: %1.2lg\n", timeMerging/1e6);
 	printf("  Sorting: %1.2lg\n", timeSorting/1e6);
+	return 0;
 }
